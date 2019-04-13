@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Chalet Book";
+  src: url("/ChaletBook.d9578035.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Chalet Book";
+  src: url("/ChaletBookBold.d884e65a.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Chalet Book";
+  src: url("/ChaletBookItalic.2ce70481.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Chalet Book";
+  src: url("/ChaletBookBoldItalic.a713c12a.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #2200ff;
+  color: #e4e4e4;
+}
+
+body {
+  font-family: "Chalet Book", "Helvetica", Arial, sans-serif;
+  min-height: 100vh;
+  color: #000000;
+  background-color: #e4e4e4;
+  margin: 0;
+  cursor: url("https://www.shareicon.net/data/128x128/2016/12/22/865587_stick_512x512.png") 96 32, auto !important;
+}
+
+section[id], header h1 {
+  padding: 10px;
+}
+
+a {
+  color: currentColor;
+  cursor: url("http://www.i2clipart.com/cliparts/4/a/4/a/clipart-3d-hand-cursor-4a4a.png") 20 20, auto !important;
+}
+a:hover {
+  color: #ff0022;
+}
+
+body.invert {
+  background-color: #000000;
+  color: #e4e4e4;
+}
+
+header {
+  text-transform: uppercase;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  color: #2200ff;
+  transition: 0.25s ease-in-out;
+}
+header.alt {
+  opacity: 0.5;
+}
+header .logo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  color: currentColor;
+}
+header .logo > h1 {
+  line-height: 0.7;
+  font-size: 15vw;
+  font-weight: normal;
+  margin: 0;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  color: currentColor;
+}
+@media screen and (orientation: landscape) {
+  header .logo > h1 {
+    font-size: 8vw;
+  }
+}
+header .logo > h1 > span {
+  display: inline-block;
+  transform: translate3d(-25%, 0, 0);
+}
+header .logo > h1 > span > span {
+  display: inline-block;
+  animation: roll 20s infinite linear;
+}
+header .logo > h1:nth-of-type(2) > span > span {
+  animation-direction: reverse;
+}
+
+@keyframes roll {
+  from {
+    transform: translate3d(25%, 0, 0);
+  }
+  to {
+    transform: translate3d(-25%, 0, 0);
+  }
+}
+section#intro {
+  padding: 45vh 0;
+}
+section#intro p {
+  font-size: 20vw;
+  line-height: 0.925;
+  word-break: break-all;
+  hyphens: auto;
+  letter-spacing: -1vw;
+  margin: 0;
+}
+section#intro p a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=/src.a2b27638.css.map */
