@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: $primary;
+  color: $background;
+}
+
+body {
+  font-family: $ffam;
+  min-height: 100vh;
+  color: $text;
+  background-color: $background;
+  margin: 0;
+  cursor: url("https://www.shareicon.net/data/128x128/2016/12/22/865587_stick_512x512.png") 96 32, auto !important;
+}
+
+section[id], header h1 {
+  padding: $sp--m;
+}
+
+a {
+  color: currentColor;
+  cursor: url("http://www.i2clipart.com/cliparts/4/a/4/a/clipart-3d-hand-cursor-4a4a.png") 20 20, auto !important;
+
+  &:hover {
+    color: $accent;
+  }
+}
